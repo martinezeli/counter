@@ -1,0 +1,99 @@
+<html>
+<header>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</header>
+<body>
+<div class="main">
+	<span class="label">Critical DE</span>
+	<span class="label">Simple DE</span>
+	<span class="label">Intervention</span>
+	<br>
+	<button id="critical" class="button">0</button>
+	<button id="simple" class="button">0</button>  
+	<button id="intervention" class="button">0</button> 
+	<br>
+	<br>
+	<br>
+	<span class="title">Definitions</span>
+	<br>
+	<span class="des">Critical DE: Safety Issue (Avoid accident, Unsafe action)</span>
+	<br>
+	<br>
+	<span class="des">Simple DE: Non-Safety Issue (Wrong lane, Comfort, Merge issue)</span>
+	<br>
+	<br>
+	<span class="des">Intervention: Non-Disengagement (Accelerator tap, scroll wheel, turn signal)</span>
+</div>
+</body>
+</html>
+<script>
+var critical = document.getElementById("critical"), criticalcount = 0;
+
+critical.onclick = function() {
+  criticalcount += 1;
+  
+  critical.innerHTML = criticalcount;
+}
+var simple = document.getElementById("simple"), simplecount = 0;
+
+simple.onclick = function() {
+  simplecount += 1;
+  
+  simple.innerHTML = simplecount;
+}
+var button3 = document.getElementById("intervention"), interventioncount = 0;
+
+intervention.onclick = function() {
+  interventioncount += 1;
+  
+  intervention.innerHTML = interventioncount;
+}
+</script>
+<style>
+.main {
+  width: 90%;
+  margin: 50px;
+  text-align: center;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px 100px;
+    border: 0px solid #a12727;
+    border-radius: 9px;
+    font: normal normal bold 150px arial;
+    text-decoration: none;
+	cursor: pointer;
+	color: white;
+	margin: 80px;
+}
+#critical {
+background-color: red;
+}
+#simple {
+background-color: blue;
+}
+#intervention {
+background-color: green;
+}
+.label {
+font: normal normal 50px arial;
+width: 90%;
+text-align: left;
+margin: 100px;
+}
+.des {
+font: normal normal 40px arial;
+width: 90%;
+text-align: left;
+margin: 100px;
+}
+.title {
+font: normal normal bold 40px arial;
+text-decoration: underline;
+width: 90%;
+text-align: left;
+margin: 100px;
+}
+</style>
