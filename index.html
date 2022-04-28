@@ -1,28 +1,19 @@
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J2SY2GG9Q5" nonce=""></script>
 <html>
 <header>
    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </header>
 <body>
 <div class="main">
-	<span class="label">Critical DE</span>
-	<span class="label">Simple DE</span>
-	<span class="label">Intervention</span>
 	<br>
 	<button id="critical" class="button">0</button>
 	<button id="simple" class="button">0</button>  
 	<button id="intervention" class="button">0</button> 
 	<br>
-	<br>
-	<br>
-	<span class="title">Definitions</span>
-	<br>
-	<span class="des">Critical DE: Safety Issue (Avoid accident, Unsafe action)</span>
-	<br>
-	<br>
-	<span class="des">Simple DE: Non-Safety Issue (Wrong lane, Comfort, Merge issue)</span>
-	<br>
-	<br>
-	<span class="des">Intervention: Non-Disengagement (Accelerator tap, scroll wheel, turn signal)</span>
+	<p class="title">Definitions</p>
+	<p class="crit">Critical DE: Safety Issue (Avoid accident, Taking red light, Unsafe action)</p>
+	<p class="simp">Simple DE: Non-Safety Issue (Wrong lane, Driver Courtesy, Merge issue)</p>
+	<p class="int">Intervention: Non-Disengagement (Accelerator tap, scroll wheel, turn signal)</p>
 </div>
 </body>
 </html>
@@ -77,23 +68,31 @@ background-color: blue;
 #intervention {
 background-color: green;
 }
-.label {
-font: normal normal 50px arial;
-width: 90%;
-text-align: left;
-margin: 100px;
-}
-.des {
+.crit {
 font: normal normal 40px arial;
-width: 90%;
-text-align: left;
-margin: 100px;
+width: 100%;
+text-align: center;
+color: white;
+background: red;
+}
+.simp {
+font: normal normal 40px arial;
+width: 100%;
+text-align: center;
+color: white;
+background: blue;
+}
+.int {
+font: normal normal 40px arial;
+width: 100%;
+text-align: center;
+color: white;
+background: green;
 }
 .title {
 font: normal normal bold 40px arial;
 text-decoration: underline;
-width: 90%;
-text-align: left;
-margin: 100px;
+width: 100%;
+text-align: center;
 }
 </style>
