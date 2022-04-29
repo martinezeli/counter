@@ -19,9 +19,8 @@
 	<button id="critical" class="button">0</button>
 	<button id="simple" class="button">0</button>  
 	<button id="intervention" class="button">0</button> 
-	<p class="note">NOTE: THIS IS JUST COUNTER. IT DOES NOT SUBMIT YOUR DATA TO THE COMMUNITY TRACKER.
-	<br>
-	<p class="title">Definitions</p>
+	<p class="note">NOTE: THIS IS JUST COUNTER. IT DOES NOT SUBMIT YOUR DATA TO THE COMMUNITY TRACKER.</p>
+	<p class="title">Definitions<button id="refresh" onClick="window.location.reload();">Reset Counters</button></p>
 	<p class="crit">Critical DE: Safety Issue (Avoid accident, Taking red light, Unsafe action)</p>
 	<p class="simp">Simple DE: Non-Safety Issue (Wrong lane, Driver Courtesy, Merge issue)</p>
 	<p class="int">Intervention: Non-Disengagement (Accelerator tap, scroll wheel, turn signal)</p>
@@ -73,6 +72,21 @@ body {
 	cursor: pointer;
 	color: black;
 	margin: 20px;
+}
+#refresh {
+display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font: normal normal bold 30px arial;
+    text-decoration: none;
+	cursor: pointer;
+	color: black;
+	margin: 5px;
+	background: #a650a4;
+	float: right;
 }
 #critical {
 background-color: #ff7070;
